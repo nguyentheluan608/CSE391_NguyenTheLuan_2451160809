@@ -1,0 +1,101 @@
+.hero {
+    min-height: calc(100vh - var(--header-height));
+    padding: 96px 20px 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(20, 184, 166, 0.24), transparent 34%),
+        radial-gradient(circle at 80% 30%, rgba(245, 158, 11, 0.23), transparent 32%),
+        linear-gradient(135deg, #f7fbfa 0%, #e8f7f5 46%, #fff7ed 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(15, 118, 110, 0.12);
+}
+
+.hero::before {
+    width: 310px;
+    height: 310px;
+    left: -110px;
+    bottom: 60px;
+}
+
+.hero::after {
+    width: 240px;
+    height: 240px;
+    right: -80px;
+    top: 130px;
+}
+
+.hero-badge {
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.65);
+    border: 1px solid rgba(15, 118, 110, 0.18);
+    color: var(--color-primary);
+    font-weight: 800;
+    box-shadow: 0 8px 28px rgba(15, 118, 110, 0.08);
+}
+
+.hero h1 {
+    max-width: 900px;
+    margin: 24px 0 16px;
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    line-height: 1;
+    letter-spacing: -0.075em;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0;
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+    color: var(--color-muted);
+}
+
+.hero-actions {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.cta-button,
+.cta-secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 24px;
+    border-radius: 999px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    color: white;
+    box-shadow: 0 14px 32px rgba(15, 118, 110, 0.22);
+}
+
+.cta-secondary {
+    background: white;
+    color: var(--color-primary);
+    border: 1px solid var(--color-border);
+}
+
+.cta-button:hover,
+.cta-secondary:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: var(--shadow-hover);
+}
