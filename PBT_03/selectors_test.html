@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors Test - Nguyễn Thế Luân</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Arial, sans-serif; background: #f3f6f4; color: #1f2937; }
+        #app { max-width: 900px; margin: 30px auto; background: #fff; border: 2px solid #d1d5db; border-radius: 16px; overflow: hidden; }
+        .top-bar { padding: 24px; background: #0f766e; color: white; }
+        .top-bar.dark { background: linear-gradient(135deg, #0f766e, #14532d); }
+        nav { display: flex; gap: 14px; margin-top: 12px; }
+        nav a { color: #d9f99d; text-decoration: none; padding: 8px 12px; border-radius: 20px; }
+        nav a.active, nav a:hover { background: white; color: #14532d; }
+        main { padding: 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        article { border: 1px solid #d6d3d1; border-radius: 12px; padding: 18px; background: #fafaf9; }
+        .featured { border-color: #f59e0b; box-shadow: 0 0 0 4px #fef3c7; }
+        .price { color: #b45309; font-weight: bold; font-size: 20px; }
+        .result { max-width: 900px; margin: 0 auto 30px; background: #ecfdf5; border: 1px solid #86efac; border-radius: 14px; padding: 16px 22px; }
+        code { background: #fff7ed; padding: 2px 6px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <header class="top-bar dark">
+            <h1>ShopTLU</h1>
+            <nav>
+                <a href="/" class="active">Home</a>
+                <a href="/products">Products</a>
+                <a href="/about">About</a>
+            </nav>
+        </header>
+        <main>
+            <article class="product">
+                <h2>iPhone 16</h2>
+                <p class="price">25.990.000đ</p>
+                <p>Mô tả sản phẩm...</p>
+            </article>
+            <article class="product featured">
+                <h2>MacBook Pro</h2>
+                <p class="price">45.990.000đ</p>
+                <p>Mô tả sản phẩm...</p>
+            </article>
+        </main>
+    </div>
+    <section class="result">
+        <h2>Kết quả kiểm chứng selectors</h2>
+        <p><code>h1</code> chọn ShopTLU</p>
+        <p><code>.price</code> chọn hai giá sản phẩm</p>
+        <p><code>.product.featured h2</code> chọn MacBook Pro</p>
+        <p><code>a[href="/"]</code> chọn Home</p>
+    </section>
+</body>
+</html>
