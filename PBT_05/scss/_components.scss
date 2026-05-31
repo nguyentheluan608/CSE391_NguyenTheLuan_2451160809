@@ -1,0 +1,45 @@
+.luan-card {
+    background: $surface-color;
+    border-radius: $radius-lg;
+    padding: $spacing-md;
+    @include card-shadow;
+    transition: transform 0.3s ease;
+
+    .luan-card__image {
+        border-radius: $radius-md;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+
+    .luan-card__title {
+        color: $primary-color;
+        margin-bottom: $spacing-sm;
+    }
+
+    &:hover {
+        transform: translateY(-6px);
+    }
+
+    &.featured {
+        border: 2px solid $secondary-color;
+    }
+}
+
+.luan-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: $spacing-md;
+
+    @include respond-to(tablet) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to(desktop) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
