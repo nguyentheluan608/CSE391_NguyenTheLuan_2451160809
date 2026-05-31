@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý sinh viên - Nguyễn Thế Luân</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="app-shell">
+        <header class="page-header">
+            <section>
+                <p class="eyebrow">BTTH03 - DOM & Events</p>
+                <h1>Quản lý sinh viên</h1>
+                <p>Trang thực hành của Nguyễn Thế Luân - Bắc Ninh</p>
+            </section>
+            <button id="openAddBtn" class="primary-btn" type="button">+ Thêm sinh viên</button>
+        </header>
+
+        <section class="summary-grid" aria-label="Thống kê sinh viên">
+            <article class="summary-card">
+                <span>Tổng sinh viên</span>
+                <strong id="totalStudents">0</strong>
+            </article>
+            <article class="summary-card accent">
+                <span>Điểm TB cả lớp</span>
+                <strong id="averageScore">0.00</strong>
+            </article>
+            <article class="summary-card">
+                <span>Sinh viên khá giỏi</span>
+                <strong id="goodStudents">0</strong>
+            </article>
+        </section>
+
+        <p id="messageBox" class="message" role="status"></p>
+
+        <section class="table-card">
+            <h2>Danh sách sinh viên</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mã SV</th>
+                            <th>Họ và tên</th>
+                            <th>Ngày sinh</th>
+                            <th>Lớp</th>
+                            <th>Email</th>
+                            <th>Điểm TB</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <section id="studentModal" class="modal" aria-hidden="true">
+        <article class="modal-box">
+            <header class="modal-header">
+                <h2 id="formTitle">Thêm sinh viên</h2>
+                <button id="closeModalBtn" class="icon-btn" type="button" aria-label="Đóng form">×</button>
+            </header>
+
+            <form id="studentForm" novalidate>
+                <input type="hidden" id="editId">
+
+                <label for="studentId">Mã sinh viên</label>
+                <input id="studentId" type="text" placeholder="VD: 2451160809">
+                <small id="studentIdError"></small>
+
+                <label for="studentName">Họ và tên</label>
+                <input id="studentName" type="text" placeholder="Nguyễn Thế Luân">
+                <small id="studentNameError"></small>
+
+                <label for="birthday">Ngày sinh</label>
+                <input id="birthday" type="date">
+                <small id="birthdayError"></small>
+
+                <label for="className">Lớp học</label>
+                <select id="className">
+                    <option value="">-- Chọn lớp --</option>
+                    <option value="66CNTT1">66CNTT1</option>
+                    <option value="66CNTT2">66CNTT2</option>
+                    <option value="66CNPM1">66CNPM1</option>
+                    <option value="66HTTT1">66HTTT1</option>
+                </select>
+                <small id="classNameError"></small>
+
+                <label for="score">Điểm trung bình</label>
+                <input id="score" type="number" step="0.1" min="0" max="10" placeholder="VD: 8.2">
+                <small id="scoreError"></small>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="luan@example.com">
+                <small id="emailError"></small>
+
+                <footer class="form-actions">
+                    <button id="cancelBtn" class="ghost-btn" type="button">Hủy</button>
+                    <button id="saveBtn" class="primary-btn" type="submit">Lưu sinh viên</button>
+                </footer>
+            </form>
+        </article>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
