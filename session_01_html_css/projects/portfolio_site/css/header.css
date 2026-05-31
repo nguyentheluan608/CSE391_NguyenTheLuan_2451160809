@@ -1,0 +1,118 @@
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: var(--header-height);
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(247, 251, 250, 0.92);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(219, 231, 228, 0.9);
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.45rem;
+    letter-spacing: -0.04em;
+    color: var(--color-dark);
+}
+
+.logo span {
+    color: var(--color-primary);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--color-muted);
+    font-weight: 700;
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+.main-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -8px;
+    height: 3px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+}
+
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+
+.main-nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    cursor: pointer;
+    background: var(--color-surface);
+}
+
+.hamburger span {
+    width: 22px;
+    height: 2px;
+    border-radius: 99px;
+    background: var(--color-dark);
+}
+
+@media (max-width: 767px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: calc(var(--header-height) - 4px);
+        left: 16px;
+        right: 16px;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 16px;
+        background: white;
+        border: 1px solid var(--color-border);
+        border-radius: 18px;
+        box-shadow: var(--shadow-soft);
+    }
+
+    .main-nav a {
+        padding: 12px 14px;
+        border-radius: 12px;
+        background: #f8fafc;
+    }
+
+    .menu-toggle:checked ~ .main-nav {
+        display: flex;
+    }
+}
