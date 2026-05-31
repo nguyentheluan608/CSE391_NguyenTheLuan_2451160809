@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Layout - Nguyễn Thế Luân</title>
+    <link rel="stylesheet" href="debug_layout.css">
+</head>
+<body>
+    <header>
+        <h1>Debug CSS Layout</h1>
+        <p>Chứng minh nguyên nhân layout vỡ và hai cách sửa.</p>
+    </header>
+
+    <main>
+        <section class="block">
+            <h2>Layout lỗi: tổng thực tế 1064px > 960px</h2>
+            <section class="container broken">
+                <aside class="sidebar">Sidebar<br>width 300 + padding + border = 342px</aside>
+                <article class="content">Content<br>width 660 + padding + border = 722px</article>
+            </section>
+        </section>
+
+        <section class="block">
+            <h2>Cách sửa 1: Dùng border-box</h2>
+            <section class="container fixed-borderbox">
+                <aside class="sidebar">Sidebar 300px</aside>
+                <article class="content">Content 660px</article>
+            </section>
+        </section>
+
+        <section class="block">
+            <h2>Cách sửa 2: Không dùng border-box nhưng giảm width</h2>
+            <section class="container fixed-contentbox">
+                <aside class="sidebar">Sidebar thực tế 300px</aside>
+                <article class="content">Content thực tế 660px</article>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
