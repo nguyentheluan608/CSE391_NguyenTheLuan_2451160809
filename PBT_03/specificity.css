@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f3ff;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(88, 28, 135, 0.18);
+    text-align: center;
+}
+
+p { color: gray; }
+.text { color: blue; }
+.highlight { color: green; }
+p.text { color: orange; }
+.text.highlight { color: brown; }
+body p.text { color: teal; }
+main .highlight { color: crimson; }
+#demo { color: red; }
+p#demo.text { color: navy; }
+main section p#demo.text.highlight { color: rebeccapurple; }
+
+#demo {
+    font-size: 54px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.note {
+    color: #4c1d95;
+}
