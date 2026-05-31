@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thế Luân - Profile cá nhân</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f7f2ea;
+            color: #263238;
+            line-height: 1.6;
+        }
+        header, main, aside, footer {
+            max-width: 1050px;
+            margin: auto;
+        }
+        header {
+            background: #2b4c3f;
+            color: white;
+            padding: 28px;
+            border-radius: 0 0 24px 24px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            background: rgba(255,255,255,0.16);
+            padding: 8px 12px;
+            border-radius: 999px;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+            padding: 24px;
+        }
+        section, aside {
+            background: #fffaf2;
+            border: 1px solid #e2d5c3;
+            border-radius: 18px;
+            padding: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+        }
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+        img {
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid #d8b56d;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #e1d2bd;
+            padding: 10px;
+            text-align: left;
+        }
+        thead, tfoot {
+            background: #e7d2aa;
+        }
+        aside {
+            margin: 0 24px 24px;
+        }
+        aside a {
+            color: #2b4c3f;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 22px;
+            color: #6d5b48;
+        }
+        @media (max-width: 760px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nguyễn Thế Luân</h1>
+        <p>Sinh viên yêu thích lập trình web và đang học HTML5 cơ bản.</p>
+        <nav aria-label="Điều hướng trong trang">
+            <ul>
+                <li><a href="#about">Về tôi</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" aria-labelledby="about-title">
+            <h2 id="about-title">Về tôi</h2>
+            <article>
+                <figure>
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='100%25' height='100%25' fill='%232b4c3f'/%3E%3Ccircle cx='150' cy='110' r='55' fill='%23e7d2aa'/%3E%3Crect x='70' y='180' width='160' height='85' rx='42' fill='%23e7d2aa'/%3E%3Ctext x='150' y='292' font-size='20' text-anchor='middle' fill='white' font-family='Arial'%3ENTL%3C/text%3E%3C/svg%3E" alt="Ảnh đại diện minh họa Nguyễn Thế Luân">
+                    <figcaption>Ảnh đại diện cá nhân</figcaption>
+                </figure>
+                <p>Em tên là Nguyễn Thế Luân, quê quán Bắc Ninh. Em đang học các kiến thức nền tảng về HTML, CSS và JavaScript để có thể tự xây dựng website cá nhân và các trang web đơn giản.</p>
+                <p>Mục tiêu của em là nắm chắc cấu trúc HTML semantic, biết tạo bảng dữ liệu, liên kết nội bộ và trình bày nội dung rõ ràng trên trình duyệt.</p>
+            </article>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-title">
+            <h2 id="skills-title">Kỹ năng</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kỹ năng</th>
+                        <th>Mức độ</th>
+                        <th>Ghi chú</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Nắm được cấu trúc trang</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>⭐⭐</td>
+                        <td>Đang luyện bố cục</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>⭐</td>
+                        <td>Mới bắt đầu</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>⭐⭐</td>
+                        <td>Biết commit cơ bản</td>
+                    </tr>
+                    <tr>
+                        <td>Tự học</td>
+                        <td>⭐⭐⭐</td>
+                        <td>Cố gắng luyện tập đều</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Tổng cộng: 5 kỹ năng đang rèn luyện</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <aside id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Thông tin liên hệ</h2>
+        <p>Quê quán: Bắc Ninh</p>
+        <p>Email: <a href="mailto:luan.nguyen@example.com">luan.nguyen@example.com</a></p>
+        <p>Điện thoại: <a href="tel:+84901234567">0901 234 567</a></p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Nguyễn Thế Luân. All rights reserved.</p>
+    </footer>
+</body>
+</html>
