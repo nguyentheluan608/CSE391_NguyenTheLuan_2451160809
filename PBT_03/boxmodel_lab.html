@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Lab - Nguyễn Thế Luân</title>
+    <link rel="stylesheet" href="boxmodel.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Box Model Lab</h1>
+        <p>So sánh content-box, border-box và layout 3 cột.</p>
+    </header>
+
+    <main>
+        <section class="lab-card">
+            <h2>Phần 1: Content-box vs Border-box</h2>
+            <section class="box-row">
+                <div class="demo-box content-box">
+                    <h3>content-box</h3>
+                    <p>width: 300px</p>
+                    <p>padding: 20px</p>
+                    <p>border: 5px</p>
+                    <strong>Thực tế: 350px</strong>
+                </div>
+                <div class="demo-box border-box">
+                    <h3>border-box</h3>
+                    <p>width: 300px</p>
+                    <p>padding: 20px</p>
+                    <p>border: 5px</p>
+                    <strong>Thực tế: 300px</strong>
+                </div>
+            </section>
+        </section>
+
+        <section class="lab-card">
+            <h2>Box Model Diagram</h2>
+            <section class="diagram-row">
+                <article class="diagram-card">
+                    <h3>Content-box</h3>
+                    <div class="outer-box">
+                        <div class="border-layer">
+                            <div class="padding-layer">
+                                <div class="content-layer">Content 300px</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>300 + 40 + 10 = 350px</p>
+                </article>
+                <article class="diagram-card">
+                    <h3>Border-box</h3>
+                    <div class="outer-box small">
+                        <div class="border-layer">
+                            <div class="padding-layer">
+                                <div class="content-layer">Content 250px</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Tổng hộp vẫn là 300px</p>
+                </article>
+            </section>
+        </section>
+
+        <section class="lab-card">
+            <h2>Phần 2: Layout 3 cột</h2>
+            <h3>Không dùng border-box: tổng 1100px nên bị vỡ</h3>
+            <section class="layout-bad">
+                <aside>Sidebar 250px + padding</aside>
+                <article>Content 500px + padding</article>
+                <aside>Ads 250px + padding</aside>
+            </section>
+
+            <h3>Dùng border-box: tổng đúng 1000px</h3>
+            <section class="layout-good">
+                <aside>Sidebar 250px</aside>
+                <article>Content 500px</article>
+                <aside>Ads 250px</aside>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

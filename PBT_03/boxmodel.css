@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+.page-header {
+    text-align: center;
+    padding: 34px;
+    background: #1e3a8a;
+    color: white;
+}
+
+main {
+    max-width: 1120px;
+    margin: 28px auto;
+    padding: 0 20px;
+}
+
+.lab-card {
+    background: white;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 22px;
+    margin-bottom: 28px;
+    box-shadow: 0 8px 20px rgba(30, 41, 59, 0.08);
+}
+
+.box-row,
+.diagram-row {
+    display: flex;
+    gap: 36px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.demo-box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #2563eb;
+    background: #dbeafe;
+    min-height: 170px;
+}
+
+.content-box {
+    box-sizing: content-box;
+}
+
+.border-box {
+    box-sizing: border-box;
+    border-color: #16a34a;
+    background: #dcfce7;
+}
+
+.diagram-card {
+    width: 420px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+.outer-box {
+    width: 350px;
+    background: #fde68a;
+    padding: 12px;
+    text-align: center;
+}
+
+.outer-box.small {
+    width: 300px;
+}
+
+.border-layer {
+    border: 5px solid #334155;
+    background: #bfdbfe;
+    padding: 12px;
+}
+
+.padding-layer {
+    background: #bbf7d0;
+    padding: 20px;
+}
+
+.content-layer {
+    background: white;
+    border: 1px dashed #64748b;
+    padding: 16px;
+}
+
+.layout-bad,
+.layout-good {
+    width: 1000px;
+    border: 3px dashed #64748b;
+    background: #f1f5f9;
+    margin-bottom: 28px;
+    overflow: visible;
+    min-height: 120px;
+}
+
+.layout-bad aside,
+.layout-bad article {
+    float: left;
+    padding: 15px;
+    min-height: 80px;
+    border: 1px solid #dc2626;
+    background: #fee2e2;
+}
+
+.layout-bad aside {
+    width: 250px;
+}
+
+.layout-bad article {
+    width: 500px;
+    padding: 20px;
+}
+
+.layout-good {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.layout-good * {
+    box-sizing: border-box;
+}
+
+.layout-good aside,
+.layout-good article {
+    float: left;
+    min-height: 80px;
+    border: 1px solid #16a34a;
+    background: #dcfce7;
+}
+
+.layout-good aside {
+    width: 250px;
+    padding: 15px;
+}
+
+.layout-good article {
+    width: 500px;
+    padding: 20px;
+}
