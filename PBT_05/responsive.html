@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuanMart Bắc Ninh - Responsive Product Page</title>
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="#">LuanMart</a>
+        <button class="hamburger" aria-label="Mở menu">☰</button>
+        <nav class="main-nav" aria-label="Điều hướng chính">
+            <a href="#" class="active">Trang chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#filter">Bộ lọc</a>
+            <a href="#footer">Liên hệ</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <aside class="filter-panel" id="filter">
+            <h2>Bộ lọc</h2>
+            <label><input type="checkbox" checked> Đang giảm giá</label>
+            <label><input type="checkbox"> Còn hàng</label>
+            <label><input type="checkbox"> Hàng học tập</label>
+            <label><input type="checkbox"> Phụ kiện</label>
+        </aside>
+
+        <section class="product-area" id="products">
+            <div class="section-heading">
+                <p class="eyebrow">Gợi ý hôm nay</p>
+                <h1>Sản phẩm công nghệ cho sinh viên</h1>
+                <p>Giao diện được viết theo hướng mobile-first, thay đổi bố cục ở tablet và desktop.</p>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22380%22%20viewBox%3D%220%200%20600%20380%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%232f855a%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f6e05e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22380%22%20rx%3D%2232%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22485%22%20cy%3D%2270%22%20r%3D%2242%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%2295%22%20width%3D%22420%22%20height%3D%22190%22%20rx%3D%2224%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22205%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3E%C4%90i%E1%BB%87n%20tho%E1%BA%A1i%20Luan%20X1%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22248%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2218%22%20fill%3D%22white%22%3ELuanMart%20B%E1%BA%AFc%20Ninh%3C/text%3E%0A%20%20%20%20%3C/svg%3E" alt="Điện thoại Luan X1" loading="lazy">
+                    <div class="card-body">
+                        <p class="tag">phone</p>
+                        <h3>Điện thoại Luan X1</h3>
+                        <p>Phù hợp nhu cầu học tập, giải trí và làm bài tập frontend.</p>
+                        <strong>3,750,000đ</strong>
+                        <a href="#" class="buy-btn">Xem chi tiết</a>
+                    </div>
+                </article><article class="product-card">
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22380%22%20viewBox%3D%220%200%20600%20380%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%233182ce%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f6e05e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22380%22%20rx%3D%2232%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22485%22%20cy%3D%2270%22%20r%3D%2242%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%2295%22%20width%3D%22420%22%20height%3D%22190%22%20rx%3D%2224%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22205%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3ETai%20nghe%20B%E1%BA%AFc%20Ninh%20Air%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22248%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2218%22%20fill%3D%22white%22%3ELuanMart%20B%E1%BA%AFc%20Ninh%3C/text%3E%0A%20%20%20%20%3C/svg%3E" alt="Tai nghe Bắc Ninh Air" loading="lazy">
+                    <div class="card-body">
+                        <p class="tag">audio</p>
+                        <h3>Tai nghe Bắc Ninh Air</h3>
+                        <p>Phù hợp nhu cầu học tập, giải trí và làm bài tập frontend.</p>
+                        <strong>5,000,000đ</strong>
+                        <a href="#" class="buy-btn">Xem chi tiết</a>
+                    </div>
+                </article><article class="product-card">
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22380%22%20viewBox%3D%220%200%20600%20380%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23805ad5%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f6e05e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22380%22%20rx%3D%2232%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22485%22%20cy%3D%2270%22%20r%3D%2242%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%2295%22%20width%3D%22420%22%20height%3D%22190%22%20rx%3D%2224%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22205%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3EB%C3%A0n%20ph%C3%ADm%20h%E1%BB%8Dc%20t%E1%BA%ADp%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22248%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2218%22%20fill%3D%22white%22%3ELuanMart%20B%E1%BA%AFc%20Ninh%3C/text%3E%0A%20%20%20%20%3C/svg%3E" alt="Bàn phím học tập" loading="lazy">
+                    <div class="card-body">
+                        <p class="tag">keyboard</p>
+                        <h3>Bàn phím học tập</h3>
+                        <p>Phù hợp nhu cầu học tập, giải trí và làm bài tập frontend.</p>
+                        <strong>6,250,000đ</strong>
+                        <a href="#" class="buy-btn">Xem chi tiết</a>
+                    </div>
+                </article><article class="product-card">
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22380%22%20viewBox%3D%220%200%20600%20380%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23dd6b20%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f6e05e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22380%22%20rx%3D%2232%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22485%22%20cy%3D%2270%22%20r%3D%2242%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%2295%22%20width%3D%22420%22%20height%3D%22190%22%20rx%3D%2224%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22205%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3EChu%E1%BB%99t%20kh%C3%B4ng%20d%C3%A2y%20Mini%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22248%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2218%22%20fill%3D%22white%22%3ELuanMart%20B%E1%BA%AFc%20Ninh%3C/text%3E%0A%20%20%20%20%3C/svg%3E" alt="Chuột không dây Mini" loading="lazy">
+                    <div class="card-body">
+                        <p class="tag">mouse</p>
+                        <h3>Chuột không dây Mini</h3>
+                        <p>Phù hợp nhu cầu học tập, giải trí và làm bài tập frontend.</p>
+                        <strong>7,500,000đ</strong>
+                        <a href="#" class="buy-btn">Xem chi tiết</a>
+                    </div>
+                </article><article class="product-card">
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22380%22%20viewBox%3D%220%200%20600%20380%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23d53f8c%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f6e05e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22380%22%20rx%3D%2232%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22485%22%20cy%3D%2270%22%20r%3D%2242%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%2295%22%20width%3D%22420%22%20height%3D%22190%22%20rx%3D%2224%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22205%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3ELaptop%20Sinh%20vi%C3%AAn%2014%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22248%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2218%22%20fill%3D%22white%22%3ELuanMart%20B%E1%BA%AFc%20Ninh%3C/text%3E%0A%20%20%20%20%3C/svg%3E" alt="Laptop Sinh viên 14" loading="lazy">
+                    <div class="card-body">
+                        <p class="tag">laptop</p>
+                        <h3>Laptop Sinh viên 14</h3>
+                        <p>Phù hợp nhu cầu học tập, giải trí và làm bài tập frontend.</p>
+                        <strong>8,750,000đ</strong>
+                        <a href="#" class="buy-btn">Xem chi tiết</a>
+                    </div>
+                </article><article class="product-card">
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22380%22%20viewBox%3D%220%200%20600%20380%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%232b6cb0%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f6e05e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22380%22%20rx%3D%2232%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22485%22%20cy%3D%2270%22%20r%3D%2242%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%2295%22%20width%3D%22420%22%20height%3D%22190%22%20rx%3D%2224%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22205%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3E%C4%90%E1%BB%93ng%20h%E1%BB%93%20Sport%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22248%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2218%22%20fill%3D%22white%22%3ELuanMart%20B%E1%BA%AFc%20Ninh%3C/text%3E%0A%20%20%20%20%3C/svg%3E" alt="Đồng hồ Sport" loading="lazy">
+                    <div class="card-body">
+                        <p class="tag">watch</p>
+                        <h3>Đồng hồ Sport</h3>
+                        <p>Phù hợp nhu cầu học tập, giải trí và làm bài tập frontend.</p>
+                        <strong>10,000,000đ</strong>
+                        <a href="#" class="buy-btn">Xem chi tiết</a>
+                    </div>
+                </article><article class="product-card">
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22380%22%20viewBox%3D%220%200%20600%20380%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%23718096%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f6e05e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22380%22%20rx%3D%2232%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22485%22%20cy%3D%2270%22%20r%3D%2242%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%2295%22%20width%3D%22420%22%20height%3D%22190%22%20rx%3D%2224%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22205%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3ES%E1%BA%A1c%20nhanh%2065W%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22248%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2218%22%20fill%3D%22white%22%3ELuanMart%20B%E1%BA%AFc%20Ninh%3C/text%3E%0A%20%20%20%20%3C/svg%3E" alt="Sạc nhanh 65W" loading="lazy">
+                    <div class="card-body">
+                        <p class="tag">charger</p>
+                        <h3>Sạc nhanh 65W</h3>
+                        <p>Phù hợp nhu cầu học tập, giải trí và làm bài tập frontend.</p>
+                        <strong>11,250,000đ</strong>
+                        <a href="#" class="buy-btn">Xem chi tiết</a>
+                    </div>
+                </article><article class="product-card">
+                    <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22600%22%20height%3D%22380%22%20viewBox%3D%220%200%20600%20380%22%3E%0A%20%20%20%20%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20stop-color%3D%22%2338a169%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f6e05e%22/%3E%3C/linearGradient%3E%3C/defs%3E%0A%20%20%20%20%3Crect%20width%3D%22600%22%20height%3D%22380%22%20rx%3D%2232%22%20fill%3D%22url%28%23g%29%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22485%22%20cy%3D%2270%22%20r%3D%2242%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Crect%20x%3D%2290%22%20y%3D%2295%22%20width%3D%22420%22%20height%3D%22190%22%20rx%3D%2224%22%20fill%3D%22rgba%28255%2C255%2C255%2C0.22%29%22/%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22205%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2234%22%20font-weight%3D%22700%22%20fill%3D%22white%22%3ELoa%20Bluetooth%20nh%E1%BB%8F%3C/text%3E%0A%20%20%20%20%3Ctext%20x%3D%22300%22%20y%3D%22248%22%20text-anchor%3D%22middle%22%20font-family%3D%22Arial%22%20font-size%3D%2218%22%20fill%3D%22white%22%3ELuanMart%20B%E1%BA%AFc%20Ninh%3C/text%3E%0A%20%20%20%20%3C/svg%3E" alt="Loa Bluetooth nhỏ" loading="lazy">
+                    <div class="card-body">
+                        <p class="tag">speaker</p>
+                        <h3>Loa Bluetooth nhỏ</h3>
+                        <p>Phù hợp nhu cầu học tập, giải trí và làm bài tập frontend.</p>
+                        <strong>12,500,000đ</strong>
+                        <a href="#" class="buy-btn">Xem chi tiết</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <aside class="ads-panel" aria-label="Quảng cáo">
+            <h2>Ưu đãi</h2>
+            <p>Miễn phí vận chuyển cho sinh viên ở Bắc Ninh.</p>
+            <p class="discount">SALE05</p>
+        </aside>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <p>© 2026 LuanMart Bắc Ninh. Thiết kế bởi Nguyễn Thế Luân.</p>
+    </footer>
+</body>
+</html>
