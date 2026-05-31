@@ -1,0 +1,18 @@
+:root {
+    --color-primary: #0f766e;
+    --color-secondary: #f59e0b;
+    --color-accent: #14b8a6;
+    --color-dark: #12201f;
+    --color-muted: #64748b;
+    --color-light: #f7fbfa;
+    --color-surface: #ffffff;
+    --color-border: #dbe7e4;
+    --font-main: "Segoe UI", Arial, sans-serif;
+    --radius-sm: 10px;
+    --radius-md: 18px;
+    --radius-lg: 28px;
+    --shadow-soft: 0 16px 40px rgba(15, 118, 110, 0.12);
+    --shadow-hover: 0 24px 56px rgba(15, 118, 110, 0.2);
+    --container: 1120px;
+    --header-height: 72px;
+}
