@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản - Nguyễn Thế Luân</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #eef6ff; color: #1f2937; }
+        header, footer { background: #1d4ed8; color: white; text-align: center; padding: 18px; }
+        main { max-width: 900px; margin: 28px auto; background: white; padding: 28px; border-radius: 20px; box-shadow: 0 10px 30px rgba(30,64,175,.12); }
+        h1 { color: #1d4ed8; }
+        form { display: grid; gap: 20px; }
+        fieldset { border: 2px solid #bfdbfe; border-radius: 16px; padding: 20px; display: grid; gap: 14px; }
+        legend { padding: 0 10px; color: #1d4ed8; font-weight: 700; }
+        label { font-weight: 700; margin-bottom: 5px; display: block; }
+        input, select, textarea { width: 100%; box-sizing: border-box; padding: 10px; border: 1.5px solid #cbd5e1; border-radius: 10px; font-size: 15px; }
+        input:focus, select:focus, textarea:focus { outline: 3px solid #bfdbfe; border-color: #2563eb; }
+        .row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+        .gender-group label, .agree label { display: inline-flex; align-items: center; gap: 8px; margin-right: 18px; font-weight: 500; }
+        .gender-group input, .agree input { width: auto; }
+        .buttons { display: flex; gap: 12px; }
+        button { padding: 12px 22px; border: 0; border-radius: 10px; font-weight: 700; cursor: pointer; }
+        button[type="submit"] { background: #1d4ed8; color: white; }
+        button[type="reset"] { background: #e5e7eb; color: #111827; }
+        @media (max-width: 700px) { .row { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shop Kinh Bắc</h1>
+        <p>Form đăng ký tài khoản khách hàng</p>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Thông tin cá nhân</legend>
+                <p>
+                    <label for="fullname">Họ tên</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="2" maxlength="50" placeholder="Nguyễn Thế Luân">
+                </p>
+                <div class="row">
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="luan@email.com">
+                    </p>
+                    <p>
+                        <label for="phone">Số điện thoại</label>
+                        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="0901234567">
+                    </p>
+                </div>
+                <p>
+                    <label for="birthday">Ngày sinh</label>
+                    <input type="date" id="birthday" name="birthday" max="2026-05-31" required placeholder="Chọn ngày sinh">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tài khoản</legend>
+                <p>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{3,20}" placeholder="theluan_608" title="Chỉ dùng chữ, số, dấu gạch dưới, từ 3 đến 20 ký tự">
+                </p>
+                <div class="row">
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required minlength="8" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" placeholder="Ít nhất 8 ký tự, có chữ hoa và số" title="Ít nhất 8 ký tự, có ít nhất 1 chữ hoa và 1 số">
+                    </p>
+                    <p>
+                        <label for="confirmPassword">Xác nhận password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" placeholder="Nhập lại mật khẩu" title="HTML chỉ kiểm tra định dạng, không tự kiểm tra khớp mật khẩu">
+                    </p>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Thông tin giao hàng</legend>
+                <div class="row">
+                    <p>
+                        <label for="city">Thành phố/Tỉnh</label>
+                        <select id="city" name="city" required>
+                            <option value="">-- Chọn tỉnh/thành --</option>
+                            <option value="bacninh">Bắc Ninh</option>
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="haiphong">Hải Phòng</option>
+                            <option value="danang">Đà Nẵng</option>
+                            <option value="hochiminh">TP. Hồ Chí Minh</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="district">Quận/Huyện</label>
+                        <select id="district" name="district" required>
+                            <option value="">-- Chọn quận/huyện --</option>
+                            <option value="tuson">Từ Sơn</option>
+                            <option value="tien-du">Tiên Du</option>
+                            <option value="que-vo">Quế Võ</option>
+                            <option value="gia-binh">Gia Bình</option>
+                        </select>
+                    </p>
+                </div>
+                <p>
+                    <label for="address">Địa chỉ chi tiết</label>
+                    <textarea id="address" name="address" rows="3" required placeholder="Số nhà, đường, xã/phường..."></textarea>
+                </p>
+                <p class="gender-group">
+                    <span>Giới tính</span><br>
+                    <label for="male"><input type="radio" id="male" name="gender" value="nam" required> Nam</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="nu"> Nữ</label>
+                    <label for="other"><input type="radio" id="other" name="gender" value="khac"> Khác</label>
+                </p>
+            </fieldset>
+
+            <p class="agree">
+                <label for="agree"><input type="checkbox" id="agree" name="agree" required> Tôi đồng ý với điều khoản sử dụng</label>
+            </p>
+
+            <p class="buttons">
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Nhập lại</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shop Kinh Bắc</p>
+    </footer>
+</body>
+</html>
