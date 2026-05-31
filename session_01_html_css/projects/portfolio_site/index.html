@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Thế Luân | Portfolio</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="site-header">
+        <a href="#home" class="logo" aria-label="Quay về trang đầu">Luan<span>Dev</span></a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Mở menu điều hướng">
+        <label for="menu-toggle" class="hamburger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav class="main-nav" aria-label="Điều hướng chính">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-badge">Sinh viên Web Frontend</div>
+            <h1>Hi, I'm Nguyễn Thế Luân</h1>
+            <p>Frontend Learner | HTML/CSS Builder | Problem Solver from Bắc Ninh</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="cta-button">View My Work</a>
+                <a href="#contact" class="cta-secondary">Contact Me</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span>01</span>
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image" aria-label="Ảnh đại diện minh họa Nguyễn Thế Luân">
+                        <div class="avatar-card">
+                            <div class="avatar-circle">L</div>
+                            <p>Bắc Ninh</p>
+                        </div>
+                    </div>
+                    <article class="about-content">
+                        <p class="lead">Mình là Nguyễn Thế Luân, đang học nền tảng Web và tập xây dựng các giao diện có cấu trúc rõ ràng.</p>
+                        <p>Mục tiêu của mình là nắm chắc HTML semantic, CSS layout và cách tạo website responsive. Trong session này mình xây dựng portfolio cá nhân gồm hero, about, skills, portfolio gallery, contact form và footer.</p>
+                        <ul class="about-list">
+                            <li>Viết HTML5 semantic, dễ đọc</li>
+                            <li>Sắp xếp layout bằng Flexbox và Grid</li>
+                            <li>Ưu tiên responsive mobile-first</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-heading center">
+                    <span>02</span>
+                    <h2>My Skills</h2>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-item">
+                        <div class="skill-top"><span class="skill-name">HTML5</span><span>90%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="90%"></div></div>
+                    </article>
+                    <article class="skill-item">
+                        <div class="skill-top"><span class="skill-name">CSS3</span><span>82%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="82%"></div></div>
+                    </article>
+                    <article class="skill-item">
+                        <div class="skill-top"><span class="skill-name">JavaScript</span><span>68%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="68%"></div></div>
+                    </article>
+                    <article class="skill-item">
+                        <div class="skill-top"><span class="skill-name">Responsive Design</span><span>78%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="78%"></div></div>
+                    </article>
+                    <article class="skill-item">
+                        <div class="skill-top"><span class="skill-name">CSS Grid</span><span>74%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="74%"></div></div>
+                    </article>
+                    <article class="skill-item">
+                        <div class="skill-top"><span class="skill-name">Git Workflow</span><span>70%</span></div>
+                        <div class="skill-bar"><div class="skill-progress" data-width="70%"></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span>03</span>
+                    <h2>My Portfolio</h2>
+                </div>
+                <div class="portfolio-filters" aria-label="Bộ lọc portfolio minh họa">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Web</button>
+                    <button class="filter-btn">Mobile</button>
+                    <button class="filter-btn">Design</button>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-item" data-category="web">
+                        <a href="#lightbox-1" class="lightbox-link" aria-label="Mở ảnh dự án Fresh Market">
+                            <svg class="project-art art-one" viewBox="0 0 400 300" role="img" aria-label="Fresh Market Website preview">
+                                <rect width="400" height="300" rx="24" fill="#eefcf4"/>
+                                <rect x="35" y="40" width="330" height="60" rx="16" fill="#16a34a"/>
+                                <rect x="35" y="125" width="95" height="120" rx="16" fill="#bbf7d0"/>
+                                <rect x="152" y="125" width="95" height="120" rx="16" fill="#86efac"/>
+                                <rect x="269" y="125" width="95" height="120" rx="16" fill="#4ade80"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <h3>Fresh Market</h3>
+                                <p>HTML + CSS Grid</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="portfolio-item" data-category="web">
+                        <a href="#lightbox-2" class="lightbox-link" aria-label="Mở ảnh dự án Study Dashboard">
+                            <svg class="project-art art-two" viewBox="0 0 400 300" role="img" aria-label="Study Dashboard preview">
+                                <rect width="400" height="300" rx="24" fill="#fff7ed"/>
+                                <rect x="35" y="35" width="90" height="230" rx="18" fill="#fb923c"/>
+                                <rect x="150" y="35" width="215" height="95" rx="18" fill="#fed7aa"/>
+                                <rect x="150" y="155" width="98" height="110" rx="18" fill="#fdba74"/>
+                                <rect x="267" y="155" width="98" height="110" rx="18" fill="#f97316"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <h3>Study Dashboard</h3>
+                                <p>Responsive layout</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="portfolio-item" data-category="web">
+                        <a href="#lightbox-3" class="lightbox-link" aria-label="Mở ảnh dự án Bắc Ninh Tour">
+                            <svg class="project-art art-three" viewBox="0 0 400 300" role="img" aria-label="Bắc Ninh Tour preview">
+                                <rect width="400" height="300" rx="24" fill="#eff6ff"/>
+                                <circle cx="105" cy="105" r="52" fill="#60a5fa"/>
+                                <rect x="190" y="58" width="150" height="36" rx="18" fill="#1d4ed8"/>
+                                <rect x="55" y="190" width="290" height="26" rx="13" fill="#93c5fd"/>
+                                <rect x="55" y="232" width="210" height="26" rx="13" fill="#bfdbfe"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <h3>Bắc Ninh Tour</h3>
+                                <p>Landing page</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="portfolio-item" data-category="mobile">
+                        <a href="#lightbox-4" class="lightbox-link" aria-label="Mở ảnh dự án Todo Mini App">
+                            <svg class="project-art art-four" viewBox="0 0 400 300" role="img" aria-label="Todo Mini App preview">
+                                <rect width="400" height="300" rx="24" fill="#f5f3ff"/>
+                                <rect x="120" y="25" width="160" height="250" rx="28" fill="#7c3aed"/>
+                                <rect x="140" y="60" width="120" height="24" rx="12" fill="#ddd6fe"/>
+                                <rect x="140" y="112" width="120" height="22" rx="11" fill="#c4b5fd"/>
+                                <rect x="140" y="160" width="120" height="22" rx="11" fill="#a78bfa"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <h3>Todo Mini App</h3>
+                                <p>Mobile first</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="portfolio-item" data-category="mobile">
+                        <a href="#lightbox-5" class="lightbox-link" aria-label="Mở ảnh dự án Cafe Order UI">
+                            <svg class="project-art art-five" viewBox="0 0 400 300" role="img" aria-label="Cafe Order UI preview">
+                                <rect width="400" height="300" rx="24" fill="#fef2f2"/>
+                                <circle cx="200" cy="105" r="60" fill="#ef4444"/>
+                                <rect x="95" y="190" width="210" height="30" rx="15" fill="#fca5a5"/>
+                                <rect x="130" y="235" width="140" height="24" rx="12" fill="#fecaca"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <h3>Cafe Order UI</h3>
+                                <p>App screen</p>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="portfolio-item" data-category="design">
+                        <a href="#lightbox-6" class="lightbox-link" aria-label="Mở ảnh dự án Portfolio Mockup">
+                            <svg class="project-art art-six" viewBox="0 0 400 300" role="img" aria-label="Portfolio Mockup preview">
+                                <rect width="400" height="300" rx="24" fill="#ecfeff"/>
+                                <rect x="45" y="45" width="310" height="62" rx="20" fill="#06b6d4"/>
+                                <circle cx="95" cy="180" r="48" fill="#67e8f9"/>
+                                <rect x="170" y="145" width="150" height="24" rx="12" fill="#22d3ee"/>
+                                <rect x="170" y="195" width="120" height="24" rx="12" fill="#a5f3fc"/>
+                            </svg>
+                            <div class="portfolio-overlay">
+                                <h3>Portfolio Mockup</h3>
+                                <p>Visual design</p>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-heading center">
+                    <span>04</span>
+                    <h2>Get In Touch</h2>
+                </div>
+                <div class="contact-wrapper">
+                    <aside class="contact-info">
+                        <h3>Contact Information</h3>
+                        <p>Mình luôn sẵn sàng trao đổi về bài tập, dự án nhỏ hoặc ý tưởng giao diện web.</p>
+                        <div class="info-item"><span class="icon">📧</span><span>nguyentheluan608@example.com</span></div>
+                        <div class="info-item"><span class="icon">📍</span><span>Bắc Ninh, Việt Nam</span></div>
+                        <div class="info-item"><span class="icon">🕒</span><span>Phản hồi trong ngày</span></div>
+                    </aside>
+                    <form class="contact-form" action="#contact" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required minlength="2" placeholder="Nhập họ tên">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Nội dung muốn trao đổi"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">LuanDev</div>
+                <p class="footer-tagline">Building simple and clean web interfaces</p>
+                <div class="social-links">
+                    <a href="https://github.com/nguyentheluan608" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.8-.3.8-.6v-2.1c-3.4.7-4.1-1.4-4.1-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2A11.2 11.2 0 0 1 12 6.8c1 0 2 .1 3 .4 2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm7 0h3.8v1.7h.1c.5-.9 1.8-1.9 3.7-1.9 3.9 0 4.6 2.6 4.6 5.9V21h-4v-5.8c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21h-4V9Z"/></svg>
+                    </a>
+                    <a href="mailto:nguyentheluan608@example.com" class="social-link" aria-label="Email">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.6-.5 7.4 6 7.4-6H4.6Zm15.4 2.1-7.3 5.9a1.1 1.1 0 0 1-1.4 0L4 7.1v11.4c0 .3.2.5.5.5h15c.3 0 .5-.2.5-.5V7.1Z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nguyễn Thế Luân. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox-1" class="lightbox"><a href="#portfolio" class="lightbox-close" aria-label="Đóng lightbox">&times;</a><svg viewBox="0 0 400 300"><rect width="400" height="300" rx="24" fill="#eefcf4"/><rect x="35" y="40" width="330" height="60" rx="16" fill="#16a34a"/><rect x="35" y="125" width="95" height="120" rx="16" fill="#bbf7d0"/><rect x="152" y="125" width="95" height="120" rx="16" fill="#86efac"/><rect x="269" y="125" width="95" height="120" rx="16" fill="#4ade80"/></svg></div>
+    <div id="lightbox-2" class="lightbox"><a href="#portfolio" class="lightbox-close" aria-label="Đóng lightbox">&times;</a><svg viewBox="0 0 400 300"><rect width="400" height="300" rx="24" fill="#fff7ed"/><rect x="35" y="35" width="90" height="230" rx="18" fill="#fb923c"/><rect x="150" y="35" width="215" height="95" rx="18" fill="#fed7aa"/><rect x="150" y="155" width="98" height="110" rx="18" fill="#fdba74"/><rect x="267" y="155" width="98" height="110" rx="18" fill="#f97316"/></svg></div>
+    <div id="lightbox-3" class="lightbox"><a href="#portfolio" class="lightbox-close" aria-label="Đóng lightbox">&times;</a><svg viewBox="0 0 400 300"><rect width="400" height="300" rx="24" fill="#eff6ff"/><circle cx="105" cy="105" r="52" fill="#60a5fa"/><rect x="190" y="58" width="150" height="36" rx="18" fill="#1d4ed8"/><rect x="55" y="190" width="290" height="26" rx="13" fill="#93c5fd"/><rect x="55" y="232" width="210" height="26" rx="13" fill="#bfdbfe"/></svg></div>
+    <div id="lightbox-4" class="lightbox"><a href="#portfolio" class="lightbox-close" aria-label="Đóng lightbox">&times;</a><svg viewBox="0 0 400 300"><rect width="400" height="300" rx="24" fill="#f5f3ff"/><rect x="120" y="25" width="160" height="250" rx="28" fill="#7c3aed"/><rect x="140" y="60" width="120" height="24" rx="12" fill="#ddd6fe"/><rect x="140" y="112" width="120" height="22" rx="11" fill="#c4b5fd"/><rect x="140" y="160" width="120" height="22" rx="11" fill="#a78bfa"/></svg></div>
+    <div id="lightbox-5" class="lightbox"><a href="#portfolio" class="lightbox-close" aria-label="Đóng lightbox">&times;</a><svg viewBox="0 0 400 300"><rect width="400" height="300" rx="24" fill="#fef2f2"/><circle cx="200" cy="105" r="60" fill="#ef4444"/><rect x="95" y="190" width="210" height="30" rx="15" fill="#fca5a5"/><rect x="130" y="235" width="140" height="24" rx="12" fill="#fecaca"/></svg></div>
+    <div id="lightbox-6" class="lightbox"><a href="#portfolio" class="lightbox-close" aria-label="Đóng lightbox">&times;</a><svg viewBox="0 0 400 300"><rect width="400" height="300" rx="24" fill="#ecfeff"/><rect x="45" y="45" width="310" height="62" rx="20" fill="#06b6d4"/><circle cx="95" cy="180" r="48" fill="#67e8f9"/><rect x="170" y="145" width="150" height="24" rx="12" fill="#22d3ee"/><rect x="170" y="195" width="120" height="24" rx="12" fill="#a5f3fc"/></svg></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
