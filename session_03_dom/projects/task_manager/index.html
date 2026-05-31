@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý công việc - Nguyễn Thế Luân</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="task-app">
+        <header class="hero-panel">
+            <section>
+                <p>BTTH03 - DOM & Events</p>
+                <h1>Quản lý công việc cá nhân</h1>
+                <span>Nguyễn Thế Luân - Bắc Ninh</span>
+            </section>
+            <button id="openTaskBtn" class="primary-btn" type="button">+ Thêm công việc</button>
+        </header>
+
+        <section class="stats" aria-label="Thống kê công việc">
+            <article>
+                <span>Tổng việc</span>
+                <strong id="totalTasks">0</strong>
+            </article>
+            <article>
+                <span>Đã hoàn thành</span>
+                <strong id="doneTasks">0</strong>
+            </article>
+            <article>
+                <span>Chưa hoàn thành</span>
+                <strong id="pendingTasks">0</strong>
+            </article>
+        </section>
+
+        <p id="notice" class="notice" role="status"></p>
+
+        <section class="task-section">
+            <h2>Danh sách công việc</h2>
+            <div id="taskList" class="task-list"></div>
+        </section>
+    </main>
+
+    <section id="taskModal" class="modal" aria-hidden="true">
+        <article class="modal-card">
+            <header class="modal-title">
+                <h2 id="taskFormTitle">Thêm công việc</h2>
+                <button id="closeTaskBtn" class="close-btn" type="button" aria-label="Đóng form">×</button>
+            </header>
+
+            <form id="taskForm" novalidate>
+                <label for="taskTitle">Tiêu đề công việc</label>
+                <input id="taskTitle" type="text" placeholder="VD: Ôn tập JavaScript DOM">
+                <small id="taskTitleError"></small>
+
+                <label for="taskDescription">Mô tả ngắn</label>
+                <textarea id="taskDescription" rows="3" placeholder="Ghi chú việc cần làm"></textarea>
+                <small id="taskDescriptionError"></small>
+
+                <label for="deadline">Hạn hoàn thành</label>
+                <input id="deadline" type="date">
+                <small id="deadlineError"></small>
+
+                <label for="priority">Mức ưu tiên</label>
+                <select id="priority">
+                    <option value="Thấp">Thấp</option>
+                    <option value="Trung bình">Trung bình</option>
+                    <option value="Cao">Cao</option>
+                </select>
+
+                <label class="checkbox-line" for="completed">
+                    <input id="completed" type="checkbox">
+                    Đánh dấu đã hoàn thành
+                </label>
+
+                <footer class="form-actions">
+                    <button id="cancelTaskBtn" class="ghost-btn" type="button">Hủy</button>
+                    <button id="saveTaskBtn" class="primary-btn" type="submit">Lưu công việc</button>
+                </footer>
+            </form>
+        </article>
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
