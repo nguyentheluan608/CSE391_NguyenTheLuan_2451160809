@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Game Đoán Số - Nguyễn Thế Luân</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #e0f2fe, #fef9c3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #1f2937;
+        }
+        main {
+            width: min(520px, 92%);
+            background: white;
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+            text-align: center;
+        }
+        h1 { margin-top: 0; color: #0369a1; }
+        p { line-height: 1.7; }
+        button {
+            border: 0;
+            border-radius: 999px;
+            background: #0284c7;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+        button:hover { background: #075985; }
+        .note {
+            margin-top: 18px;
+            background: #f8fafc;
+            border: 1px dashed #94a3b8;
+            padding: 14px;
+            border-radius: 14px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>🎯 Mini Game Đoán Số</h1>
+        <p>Máy sẽ random một số từ <strong>1 đến 100</strong>. Người chơi có tối đa <strong>7 lần đoán</strong>.</p>
+        <button id="startBtn" type="button">Bắt đầu chơi</button>
+        <section class="note">
+            Game sử dụng <code>prompt()</code> để nhập số và <code>alert()</code> để thông báo cao hơn, thấp hơn hoặc đúng rồi.
+        </section>
+    </main>
+    <script src="guess.js"></script>
+</body>
+</html>
