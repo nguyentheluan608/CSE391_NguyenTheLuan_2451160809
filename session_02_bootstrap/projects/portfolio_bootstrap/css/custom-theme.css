@@ -1,0 +1,178 @@
+:root {
+    --bs-primary: #0f766e;
+    --bs-primary-rgb: 15, 118, 110;
+    --luan-orange: #f97316;
+    --luan-dark: #0f172a;
+    --luan-soft: #f3f8f7;
+    --luan-radius: 1.25rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: #1f2937;
+    background: #ffffff;
+}
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.section-padding {
+    padding: 88px 0;
+}
+
+.luan-navbar {
+    background: rgba(15, 23, 42, 0.96);
+    backdrop-filter: blur(14px);
+}
+
+.navbar-brand span {
+    color: var(--luan-orange);
+}
+
+.hero-section {
+    background:
+        radial-gradient(circle at 10% 20%, rgba(249, 115, 22, .24), transparent 32%),
+        linear-gradient(135deg, #0f172a 0%, #0f766e 58%, #134e4a 100%);
+}
+
+.profile-card {
+    transform: rotate(1.5deg);
+}
+
+.avatar-circle {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: white;
+    background: linear-gradient(135deg, #0f766e, #f97316);
+    box-shadow: 0 18px 40px rgba(15, 118, 110, .28);
+}
+
+.stat-box {
+    background: var(--luan-soft);
+}
+
+.stat-box strong,
+.stat-box span {
+    display: block;
+}
+
+.stat-box strong {
+    font-size: 1.25rem;
+    color: #0f766e;
+}
+
+.stat-box span {
+    font-size: .78rem;
+    color: #64748b;
+}
+
+.about-photo {
+    min-height: 420px;
+    background:
+        linear-gradient(rgba(15, 118, 110, .35), rgba(15, 23, 42, .45)),
+        url("https://placehold.co/640x820/0f766e/ffffff?text=Nguyen+The+Luan") center/cover;
+}
+
+.info-item {
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+.skill-card,
+.project-card {
+    border-radius: var(--luan-radius);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.skill-card:hover,
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 1rem 2.5rem rgba(15, 23, 42, .13) !important;
+}
+
+.skill-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.project-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.btn-primary {
+    --bs-btn-bg: #0f766e;
+    --bs-btn-border-color: #0f766e;
+    --bs-btn-hover-bg: #115e59;
+    --bs-btn-hover-border-color: #115e59;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #0f766e;
+    --bs-btn-border-color: #0f766e;
+    --bs-btn-hover-bg: #0f766e;
+    --bs-btn-hover-border-color: #0f766e;
+}
+
+.footer-dark {
+    background: #0f172a;
+    color: white;
+}
+
+.footer-dark a {
+    color: rgba(255, 255, 255, .74);
+    text-decoration: none;
+}
+
+.footer-dark a:hover {
+    color: var(--luan-orange);
+}
+
+.back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 44px;
+    height: 44px;
+    display: none;
+    z-index: 1000;
+}
+
+.back-to-top.show {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rounded-5 {
+    border-radius: 2rem !important;
+}
+
+@media (max-width: 767.98px) {
+    .section-padding {
+        padding: 64px 0;
+    }
+
+    .profile-card {
+        transform: none;
+    }
+
+    .display-4 {
+        font-size: 2.45rem;
+    }
+}
