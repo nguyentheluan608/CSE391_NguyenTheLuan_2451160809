@@ -1,0 +1,38 @@
+.comments-section {
+    border-radius: 1.35rem;
+}
+
+.comment-form .form-control {
+    border-radius: 1rem;
+    padding: .8rem 1rem;
+}
+
+.avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    flex: 0 0 44px;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-weight: 700;
+}
+
+.comment-box {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+}
+
+.comment-box p {
+    color: #475569;
+}
+
+.comment-box .btn-link {
+    color: #0f766e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.comment-box .btn-link:hover {
+    text-decoration: underline;
+}
