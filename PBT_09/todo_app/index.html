@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Sinh Viên Bắc Ninh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app-shell">
+        <section class="todo-card" aria-label="Ứng dụng todo">
+            <header class="todo-header">
+                <p class="eyebrow">DOM Practice</p>
+                <h1>Kế hoạch học tập</h1>
+                <p>Quản lý việc cần làm trong tuần của Nguyễn Thế Luân.</p>
+            </header>
+
+            <form id="todoForm" class="todo-form">
+                <label for="todoInput">Thêm công việc</label>
+                <div class="input-row">
+                    <input id="todoInput" type="text" placeholder="Ví dụ: Ôn Event Delegation">
+                    <button type="submit">Thêm</button>
+                </div>
+            </form>
+
+            <section class="toolbar" aria-label="Bộ lọc todo">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </section>
+
+            <ul id="todoList" class="todo-list" aria-label="Danh sách công việc"></ul>
+
+            <footer class="todo-footer">
+                <span id="todoCount">0 items left</span>
+                <button id="clearCompleted" type="button">Clear completed</button>
+            </footer>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
